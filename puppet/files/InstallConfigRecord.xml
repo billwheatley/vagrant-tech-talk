@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutomatedInstallation langpack="eng">
+	<com.jboss.devstudio.core.installer.HTMLInfoPanelWithRootWarning id="introduction"/>
+	<com.izforge.izpack.panels.HTMLLicencePanel id="licence"/>
+	<com.jboss.devstudio.core.installer.PathInputPanel id="target">
+		<installpath>/home/vagrant/jbdevstudio</installpath>
+	</com.jboss.devstudio.core.installer.PathInputPanel>
+	<com.jboss.devstudio.core.installer.JREPathPanel id="jre"/>
+	<com.jboss.devstudio.core.installer.JBossAsSelectPanel id="as">
+		<installgroup>jbds</installgroup>
+	</com.jboss.devstudio.core.installer.JBossAsSelectPanel>
+	<com.jboss.devstudio.core.installer.UpdatePacksPanel id="updatepacks"/>
+	<com.jboss.devstudio.core.installer.DiskSpaceCheckPanel id="diskspacecheck"/>
+	<com.izforge.izpack.panels.SummaryPanel id="summary"/>
+	<com.izforge.izpack.panels.InstallPanel id="install"/>
+	<com.jboss.devstudio.core.installer.CreateLinkPanel id="createlink">
+		<jrelocation>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.51-4.b16.fc22.x86_64/bin/java</jrelocation>
+	</com.jboss.devstudio.core.installer.CreateLinkPanel>
+	<com.izforge.izpack.panels.ShortcutPanel id="shortcut">
+		<programGroup name=""/>
+		<shortcut KdeSubstUID="false" categories="Applications;Development;" commandLine="" createForAll="true" description="Runs the Red Hat JBoss Developer Studio 8.1.0.GA" encoding="UTF-8" group="false" icon="/home/vagrant/jbdevstudio/studio/48-jbds_icon.png" iconIndex="0" initialState="1" mimetype="" name="Red Hat JBoss Developer Studio 8.1.0.GA" target="/home/vagrant/jbdevstudio/studio/jbdevstudio" terminal="false" terminalOptions="" tryexec="" type="Application" url="" usertype="0" workingDirectory="/home/vagrant/jbdevstudio/studio"/>
+		<shortcut KdeSubstUID="false" categories="Applications;Development;" commandLine="" createForAll="true" description="Runs the Red Hat JBoss Developer Studio 8.1.0.GA" encoding="UTF-8" group="true" icon="/home/vagrant/jbdevstudio/studio/48-jbds_icon.png" iconIndex="0" initialState="1" mimetype="" name="Red Hat JBoss Developer Studio 8.1.0.GA" target="/home/vagrant/jbdevstudio/studio/jbdevstudio" terminal="false" terminalOptions="" tryexec="" type="Application" url="" usertype="0" workingDirectory="/home/vagrant/jbdevstudio/studio"/>
+		<shortcut KdeSubstUID="false" categories="Applications;Development;" commandLine="-jar &quot;/home/vagrant/jbdevstudio/Uninstaller/uninstaller.jar&quot;" createForAll="true" description="Uninstall Red Hat JBoss Developer Studio 8.1.0.GA" encoding="UTF-8" group="true" icon="/home/vagrant/jbdevstudio/studio/48-jbds_uninstall_icon.png" iconIndex="0" initialState="1" mimetype="" name="Uninstall Red Hat JBoss Developer Studio 8.1.0.GA" target="java" terminal="false" terminalOptions="" tryexec="" type="Application" url="" usertype="0" workingDirectory="/home/vagrant/jbdevstudio/Uninstaller"/>
+	</com.izforge.izpack.panels.ShortcutPanel>
+	<com.jboss.devstudio.core.installer.ShortcutPanelPatch id="shortcutpatch"/>
+	<com.izforge.izpack.panels.SimpleFinishPanel id="finish"/>
+</AutomatedInstallation>

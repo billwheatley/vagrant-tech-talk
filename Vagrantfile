@@ -76,6 +76,9 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
       sudo dnf -y install puppet
+      sudo puppet module install puppetlabs-git
+      sudo puppet module install maestrodev-maven
+      sudo puppet module install puppetlabs-java
       sudo puppet apply /vagrant/puppet/manifests/
     SHELL
 
